@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Cardlist from './Cardlist';
-import Scroll from './Scroll';
-import SearchBox from './SearchBox';
+import Cardlist from '../components/Cardlist';
+import Scroll from '../components/Scroll';
+import SearchBox from '../components/SearchBox';
 
 class App extends Component {
   constructor() {
@@ -34,7 +34,7 @@ render(){
 
 
     return !robots.length ? 
-    <h1>Hola error error....loading?</h1> : 
+    <h1>Please wait</h1> : 
 (
      <div className='tc'>
       <h1>Robofriends</h1>
